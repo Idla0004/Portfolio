@@ -1,24 +1,170 @@
-.logo {
-  position: absolute;
-  left: 30px;
-  top: 15px;
-  width: 100px;
+@font-face {
+  font-family: Oswaldbold;
+  src: url(/fonts/Oswald-Bold.ttf);
 }
 
-li,
-ul,
+@font-face {
+  font-family: Oswaldsemi;
+  src: url(/fonts/Oswald-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Oswaldreg;
+  src: url(/fonts/Oswald-Regular.ttf);
+}
+
+@font-face {
+  font-family: Latothin;
+  src: url(/fonts/Lato-Thin.ttf);
+}
+
+@font-face {
+  font-family: Latobold;
+  src: url(/fonts/Lato-Bold.ttf);
+}
+
+@font-face {
+  font-family: Latoreg;
+  src: url(/fonts/Lato-Regular.ttf);
+}
+
+body {
+  background-image: url("/img/background.webp");
+  background-color: #cccccc;
+  background-size: cover;
+}
+
+.logo img {
+  position: absolute;
+  left: 50px;
+  padding-top: 35px;
+  width: 50px;
+}
+
+.horizontal {
+  border-left: 4px solid red;
+  height: 50px;
+  position: absolute;
+  top: 65px;
+  left: 3%;
+}
+
+.horizontal2 {
+  border-left: 4px solid red;
+  height: 50px;
+  position: absolute;
+  top: 65px;
+  right: -3%;
+}
+
+.menu {
+  position: fixed;
+  right: 100px;
+  font-size: 48px;
+  top: -20px;
+}
+
+.menu a {
+  color: black;
+}
+
+.menu a:hover {
+  color: #792929;
+}
+
 a {
   text-decoration: none;
+  color: white;
+  font-family: Oswaldsemi;
+}
+
+.burger-menu {
+  background-color: rgb(0, 0, 0);
+  height: 110px;
+  width: 100%;
+  max-width: 200px;
+  position: fixed;
+  top: 70px;
+  right: -450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  line-height: 1.5;
+  transition: 0.3 ease;
+}
+
+.burger-menu.active {
+  right: 0;
+}
+
+nav {
+  padding: 5px;
+  display: flex;
+}
+
+.burger-menu2 {
+  height: 50px;
+  width: 40px;
+  margin-left: auto;
+  position: relative;
+  top: 30px;
+}
+
+.burger-menu2 span {
+  height: 5px;
+  width: 100%;
+  background-color: red;
+  border-radius: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3 ease;
+}
+
+.burger-menu2 span:nth-child(1) {
+  top: 25%;
+}
+
+.burger-menu2 span:nth-child(3) {
+  top: 75%;
+}
+
+.burger-menu2.active span:nth-child(1) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+.burger-menu2.active span:nth-child(2) {
+  opacity: 0;
+}
+.burger-menu2.active span:nth-child(3) {
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
 }
 
 @media (width <= 600px) {
   main {
     padding: 10px;
   }
+
+  .menu {
+    display: none;
+  }
 }
 
+/*Desktop*/
 @media (width > 600px) {
   main {
     padding: 0 10vw;
+  }
+  .burger-menu {
+    display: none;
+  }
+
+  .burger-menu2 {
+    display: none;
   }
 }
