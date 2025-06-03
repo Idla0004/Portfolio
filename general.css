@@ -1,3 +1,4 @@
+/*fonte*/
 @font-face {
   font-family: Oswaldbold;
   src: url(/fonts/Oswald-Bold.ttf);
@@ -28,12 +29,139 @@
   src: url(/fonts/Lato-Regular.ttf);
 }
 
+p {
+  font-family: Latobold;
+}
+
+.norm {
+  font-family: Latoreg;
+}
+
+/* Footer */
+footer {
+  background-color: black;
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.grid3_1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25%;
+  color: white;
+}
+
+.kontakt {
+  align-items: left;
+  margin: auto;
+}
+
+.copy {
+  align-self: center;
+  margin: auto;
+}
+
+.links {
+  display: grid;
+  grid-row: 2fr;
+  align-items: right;
+  margin: auto;
+  gap: 25%;
+}
+
+/*baggrundsbillede*/
 body {
   background-image: url("/img/background.webp");
   background-color: #cccccc;
   background-size: cover;
 }
 
+/*grids*/
+.grid-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.grid-2 {
+  width: 100%;
+}
+
+/*forside link knapper*/
+.grid1_2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding-top: 50px;
+  padding-bottom: 40px;
+}
+
+.grid1_2 a {
+  background-color: black;
+  width: 250px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: solid rgb(240, 240, 240) 0.75px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  margin: auto;
+}
+
+.grid1_2 a:hover {
+  color: #e8e8e8;
+  background-color: rgb(63, 63, 63);
+}
+
+/*side overskrifter*/
+h1 {
+  font-family: Oswaldbold;
+  font-size: 50px;
+}
+
+h2 {
+  font-family: Oswaldreg;
+  font-size: 36px;
+  margin-top: 0px;
+}
+
+.headline h1 {
+  position: absolute;
+  top: 110px;
+  font-family: Oswaldbold;
+  font-size: 55px;
+  margin-left: 25px;
+  letter-spacing: -3px;
+}
+
+.behindheadline h1 {
+  padding-top: 30px;
+  font-family: Oswaldbold;
+  font-size: 110px;
+  color: transparent;
+  letter-spacing: 28px;
+  text-shadow: 20px 1px 22px #ff1815;
+}
+
+.underhead h2 {
+  margin-left: 20px;
+  position: absolute;
+  top: 290px;
+}
+
+.comp img {
+  width: 100%;
+  height: 100%;
+  max-width: 1300px;
+  box-shadow: 2px 2px 8px black;
+}
+
+/*menu bar og logo*/
 .logo img {
   position: absolute;
   left: 50px;
@@ -58,10 +186,9 @@ body {
 }
 
 .menu {
-  position: fixed;
+  position: absolute;
   right: 100px;
   font-size: 48px;
-  top: -20px;
 }
 
 .menu a {
@@ -145,20 +272,73 @@ nav {
   transform: translate(-50%, -50%) rotate(-45deg);
 }
 
+/*mobile size*/
 @media (width <= 600px) {
   main {
-    padding: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .menu {
     display: none;
+  }
+
+  .headline h1 {
+    padding-top: 45px;
+    font-size: 30px;
+  }
+
+  .behindheadline h1 {
+    font-size: 50px;
+    padding-top: 60px;
+    letter-spacing: 10px;
+  }
+
+  .underhead h2 {
+    font-size: 20px;
+    position: absolute;
+    top: 240px;
+  }
+
+  footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .grid3_1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: small;
+    margin: auto;
+  }
+
+  .links {
+    text-align: center;
+  }
+
+  .grid1_2 {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 200px;
+    margin: auto;
+    gap: 10px;
+  }
+
+  .grid1_2 a {
+    max-width: 150px;
+    max-height: 20px;
+    font-size: medium;
+    padding-top: 10px;
+    padding-bottom: 12px;
   }
 }
 
 /*Desktop*/
 @media (width > 600px) {
   main {
-    padding: 0 10vw;
+    padding-left: 150px;
+    padding-right: 150px;
   }
   .burger-menu {
     display: none;
