@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="DA">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="robots" content="noindex" />
+    <link rel="icon" type="Favicon" href="img/logo2.webp" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="general.css" />
+    <link rel="stylesheet" href="/styling.css" />
+    <link rel="stylesheet" href="tema.css" />
+    <title>Forside</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo"><img src="/img/logo2.webp" alt="logo" /></div>
+      <nav class="menu">
+        <ul>
+          <div class="horizontal"></div>
+          <a href="index.html">FORSIDE</a>
+        </ul>
+        <ul>
+          <a href="ommig.html">OM MIG</a>
+        </ul>
+        <ul>
+          <a href="portfolio.html">PORTFOLIO</a>
+        </ul>
+        <div class="horizontal2"></div>
+      </nav>
+
+      <div class="burger-menu">
+        <ul>
+          <li><a href="index.html">FORSIDE</a></li>
+          <li><a href="ommig.html">OM MIG</a></li>
+          <li><a href="portfolio.html">PORTFOLIO</a></li>
+        </ul>
+      </div>
+
+      <nav>
+        <div class="burger-menu2">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="Temaslide fade">
+          <div class="numbertext">1 / 4</div>
+          <img src="img/t2forside.webp" style="width: 100%" />
+          <div class="text">TEMA 2 FORSIDE</div>
+        </div>
+
+        <div class="Temaslide fade">
+          <div class="numbertext">2 / 4</div>
+          <img src="img/t2wireframe.webp" style="width: 100%" />
+          <div class="text">TEMA 2 WIREFRAME</div>
+        </div>
+
+        <div class="Temaslide fade">
+          <div class="numbertext">3 / 4</div>
+          <img src="img/t2galleri.webp" style="width: 100%" />
+          <div class="text">TEMA 2 GALLERI SIDE</div>
+        </div>
+
+        <div class="Temaslide fade">
+          <div class="numbertext">4 / 4</div>
+          <img src="img/t2layoutdiagram.webp" style="width: 100%" />
+          <div class="text">TEMA 2 LAYOUT DIAGRAM</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <!-- The dots/circles -->
+      <div class="dots">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+      </div>
+      <div class="grid1_3">
+        <div class="tematext1">
+          <h3>LØSNING:</h3>
+          <p>
+            Temaet introducerede os til basale webteknologier som HTML og CSS.
+            Vi opsatte vores første domæne og anvendte Visual Studio Code som
+            primært udviklingsmiljø. Projektet tog udgangspunkt i fastlagt
+            indhold og layout, hvor vi lærte at implementere mobile-first
+            løsninger og anvende CSS Grid til strukturering af layoutet.
+            Derudover fik vi indsigt i semantisk HTML og best practices inden
+            for styling.
+          </p>
+        </div>
+        <img class="temaimg" src="img/t2forsidephone.webp" alt="" />
+      </div>
+      <div class="grid1_4">
+        <img class="temaimg1" src="img/t2operativ.webp" alt="" />
+        <div class="tematext1">
+          <h3>PROCESS</h3>
+          <p>
+            Selvom jeg tidligere havde stiftet bekendtskab med HTML og CSS, var
+            det første gang jeg arbejdede ud fra et struktureret layoutdiagram.
+            Det gav mig en ny forståelse for den visuelle planlægningsfase før
+            kodning. Arbejdet blev udført i sparring med studiegruppen, hvilket
+            understøttede fejlretning og optimering.
+          </p>
+        </div>
+      </div>
+      <div class="grid4_1">
+        <div class="tematext2">
+          <h3>UDFORDRINGER I TEMA 2</h3>
+          <p>
+            En konkret teknisk udfordring opstod i opbygningen af
+            galleri-layoutet på desktop, hvor ét billede ikke tilpassede sig
+            korrekt i grid-strukturen. Problemet blev løst ved anvendelse af
+            object-fit: cover.
+          </p>
+        </div>
+        <div class="tematext3">
+          <h3>HVAD JEG TOG MED FRA TEMA 2</h3>
+          <p>
+            Jeg tilegnede mig en stærkere forståelse for opbygning af layouts
+            med CSS Grid og vigtigheden af at tænke i mobile-first løsninger.
+            Dele som wireframes og layoutdiagrammer er siden blevet faste
+            elementer i mit workflow, hvilket har øget min effektivitet i
+            fremtidige projekter.
+          </p>
+        </div>
+      </div>
+      <div class="grid1_2">
+        <a href="portfolio.html">PORTFOLIO SIDE</a>
+        <a href="T3.html">NÆSTE TEMA</a>
+      </div>
+    </main>
+    <footer>
+      <div class="grid3_1">
+        <div class="kontakt">
+          <p>KONTAKT MIG HER:</p>
+          <p class="norm">Idla0004@stud.kea.dk</p>
+        </div>
+        <div class="copy"><p class="norm">&#169; Ida Hernvig</p></div>
+        <div class="links">
+          <a href="ommig.html">OM MIG</a>
+          <a href="portfolio.html">PORTFOLIO</a>
+        </div>
+      </div>
+    </footer>
+    <script src="slide.js"></script>
+  </body>
+</html>

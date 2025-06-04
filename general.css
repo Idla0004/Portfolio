@@ -414,9 +414,9 @@ nav {
 .portfolio-card {
   background-color: white;
   width: 500px;
-  height: 650px;
+  height: 600px;
   padding: 1px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   opacity: 0.5;
   transition: all 0.3s ease;
   display: flex;
@@ -440,7 +440,7 @@ nav {
 }
 
 .portfolio-card img {
-  margin-top: 35px;
+  margin-top: 50px;
 }
 
 .portfolio-card h2 {
@@ -469,7 +469,7 @@ nav {
 }
 
 /*mobile size*/
-@media (width <= 600px) {
+@media (width <= 700px) {
   main {
     padding-left: 10px;
     padding-right: 10px;
@@ -480,20 +480,19 @@ nav {
   }
 
   .headline h1 {
-    padding-top: 15px;
     font-size: 36px;
   }
 
   .behindheadline h1 {
     font-size: 55px;
-    padding-top: 40px;
+    padding-top: 20px;
     letter-spacing: 8px;
   }
 
   .underhead h2 {
     font-size: 20px;
     position: absolute;
-    top: 220px;
+    top: 200px;
   }
 
   footer {
@@ -571,14 +570,59 @@ nav {
   .textboxright {
     margin: 0%;
   }
+
+  .portfolio-container {
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    margin-bottom: 10px;
+    row-gap: 10px;
+  }
+
+  .portfolio-card {
+    max-width: 350px;
+    max-height: 425px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 1;
+  }
+
+  .portfolio-card:hover {
+    opacity: 1;
+    transform: none;
+    z-index: auto;
+  }
+
+  .portfolio-card a {
+    max-width: 120px;
+    font-size: 15px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 0%;
+  }
+
+  .portfolio-card img {
+    margin-top: 60px;
+    object-fit: scale-down;
+  }
+
+  .portfolio-card h3 {
+    font-size: 20px;
+  }
+
+  .portfolio-card h2 {
+    font-size: 50px;
+  }
 }
 
 /*Desktop*/
-@media (width > 600px) {
+@media (width > 700px) {
   main {
-    padding-left: 150px;
-    padding-right: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
   }
+
   .burger-menu {
     display: none;
   }
