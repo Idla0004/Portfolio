@@ -12,20 +12,14 @@
   </head>
   <body>
     <header>
-      <div class="logo"><img src="/img/logo2.webp" alt="logo" /></div>
-      <nav class="menu">
-        <ul>
-          <div class="horizontal"></div>
-          <a href="index.html">FORSIDE</a>
-        </ul>
-        <ul>
-          <a href="ommig.html">OM MIG</a>
-        </ul>
-        <ul>
-          <a href="portfolio.html">PORTFOLIO</a>
-        </ul>
-        <div class="horizontal2"></div>
-      </nav>
+      <ul class="menu-links">
+        <div class="logo"><img src="/img/logo2.webp" alt="logo" /></div>
+        <li><div class="horizontalleft"></div></li>
+        <li><a href="index.html">FORSIDE</a></li>
+        <li><a href="ommig.html">OM MIG</a></li>
+        <li><a href="portfolio.html">PORTFOLIO</a></li>
+        <li><div class="horizontalright"></div></li>
+      </ul>
 
       <div class="burger-menu">
         <ul>
@@ -44,6 +38,15 @@
       </nav>
     </header>
     <main>
+      <h1 class="headline2">TEMA 4</h1>
+      <h1 class="headline">TEMA 4</h1>
+      <h2 class="underhead">GRUNDLÆGGENDE ANIMATION</h2>
+      <a
+        class="portlink"
+        href="https://idahernvig.dk/tema4-emergencysite/index.html"
+        target="_blank"
+        >LINK TIL TEMA 4 SITE</a
+      >
       <div class="slideshow-container">
         <div class="Temaslide fade">
           <div class="numbertext">1 / 4</div>
@@ -78,8 +81,8 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
       </div>
-      <div class="grid1_3">
-        <div class="tematext1">
+      <div class="grid-2">
+        <div class="tematext wide">
           <h3>LØSNING:</h3>
           <p>
             I dette tema arbejdede vi med JavaScript, SVG og CSS-animationer.
@@ -92,12 +95,17 @@
         <img
           class="temaimg"
           src="img/t4styletile.webp"
-          alt="Tema 4 style tile"
+          alt="Skærmbillede af t2 site"
         />
       </div>
-      <div class="grid1_4">
-        <img class="temaimg1" src="img/t4form.webp" alt="Tema 4 Form" />
-        <div class="tematext1">
+
+      <div class="grid-2 reverse">
+        <img
+          class="temaimg"
+          src="img/t4form.webp"
+          alt="Skærmbillede af operativsystem-side"
+        />
+        <div class="tematext wide">
           <h3>PROCESS</h3>
           <p>
             Vi udviklede tekst indhold og producerede illustrationer i Adobe
@@ -109,8 +117,9 @@
           </p>
         </div>
       </div>
-      <div class="grid4_1">
-        <div class="tematext2">
+
+      <div class="grid-3">
+        <div class="tematext">
           <h3>UDFORDRINGER I TEMA 4</h3>
           <p>
             JavaScript var klart den største udfordring. Det logiske niveau og
@@ -120,7 +129,7 @@
             tilfredsstillende resultater.
           </p>
         </div>
-        <div class="tematext3">
+        <div class="tematext medium">
           <h3>HVAD JEG TOG MED FRA TEMA 4</h3>
           <p>
             Jeg har opnået et solidt grundlag i JavaScript og fået indsigt i,
@@ -131,13 +140,14 @@
           </p>
         </div>
       </div>
+
       <div class="grid1_2">
-        <a href="T3.html">FORRIGE TEMA</a>
-        <a href="T5.html">NÆSTE TEMA</a>
+        <a class="portlinks" href="T3.html">FORRIGE TEMA</a>
+        <a class="portlinks" href="T5.html">NÆSTE TEMA</a>
       </div>
     </main>
     <footer>
-      <div class="grid3_1">
+      <div class="footer-grid">
         <div class="kontakt">
           <p>KONTAKT MIG HER:</p>
           <p class="norm">Idla0004@stud.kea.dk</p>
@@ -150,5 +160,6 @@
       </div>
     </footer>
     <script src="slide.js"></script>
+    <script src="general.js"></script>
   </body>
 </html>
