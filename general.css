@@ -57,20 +57,19 @@ li {
 
 /* Footer */
 footer {
+  display: block;
   background-color: black;
-  padding-top: 20px;
-  padding-bottom: 40px;
   border: solid 3px;
   border-color: transparent;
   border-top-style: solid;
   border-top-color: #c9372c;
+  color: white;
 }
 
 .footer-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  padding: 20px 20px 15px;
   gap: 25%;
-  color: white;
 }
 
 .kontakt {
@@ -287,9 +286,10 @@ nav {
 }
 
 /*Om mig side*/
-.omh {
-  font-family: Oswaldbold;
-  font-size: 30px;
+
+.grid1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .textbox1 {
@@ -358,21 +358,8 @@ nav {
   height: 30px;
 }
 
-.grid1_1 {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  background-color: rgba(240, 240, 240, 0.4);
-  border: solid 1px;
-  border-color: #ed3a2c;
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px #ed3a2c;
-  padding-left: 40px;
-  padding-right: 100px;
-  padding-top: 15px;
-  line-height: 1.4;
-  font-size: 16px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
+.illustration {
+  max-width: 480px;
 }
 
 /*PORTFOLIO SIDE*/
