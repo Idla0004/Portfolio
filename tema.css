@@ -21,7 +21,7 @@
 .prev,
 .next {
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 50%;
+  border-radius: 2%;
   cursor: pointer;
   position: absolute;
   top: 85%;
@@ -208,6 +208,10 @@
     margin: 0 auto;
   }
 
+  .tematext h3 {
+    font-size: 20px;
+  }
+
   .temaimg {
     width: 100%;
   }
@@ -221,25 +225,24 @@
 
   .prev {
     margin-left: 20px;
-    top: 390px;
+    top: 382px;
     font-size: 15px;
-    padding-left: 0px;
-    padding-right: 1px;
-    color: black;
   }
 
   .next {
     margin-right: 20px;
     font-size: 15px;
-    top: 390px;
-    padding-left: 0px;
-    padding-right: 1px;
-    color: #000;
+    top: 382px;
+  }
+
+  .next,
+  .prev {
+    padding: 0px;
   }
 
   .text {
-    padding: 8px 8px;
+    padding: 1px 1px;
     position: relative;
-    width: 40%;
+    width: 55%;
   }
 }

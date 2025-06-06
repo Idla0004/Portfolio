@@ -234,6 +234,7 @@ a {
   font-size: 18px;
   line-height: 1.5;
   transition: 0.3 ease;
+  z-index: 1;
 }
 
 .burger-menu.active {
@@ -468,11 +469,10 @@ nav {
 
   .headline2 {
     font-size: 40px;
-    padding-right: 200px;
+    margin-right: 120px;
   }
 
   .headline {
-    font-family: Oswaldbold;
     font-size: 30px;
     position: absolute;
     left: 30px;
