@@ -20,15 +20,17 @@
 
 .prev,
 .next {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 50%;
   cursor: pointer;
   position: absolute;
-  top: 80%;
+  top: 85%;
   width: 45px;
   padding-bottom: 2px;
-  padding-top: 2px;
-  padding-left: 3px;
-  padding-right: 3px;
-  color: white;
+  padding-top: 1px;
+  padding-left: 2px;
+  padding-right: 4px;
+  color: rgb(0, 0, 0);
   font-weight: bold;
   font-size: 30px;
   transition: 0.6s ease;
@@ -45,16 +47,10 @@
   right: 0;
 }
 
-.prev:hover,
-.next:hover {
-  background-color: rgba(0, 0, 0, 0.8);
-  border-radius: 50%;
-}
-
 .text {
   color: #000000;
   font-family: Oswaldbold;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
   font-size: 15px;
   padding: 8px 12px;
   position: relative;
@@ -68,7 +64,7 @@
 .numbertext {
   font-family: Oswaldbold;
   color: #000000;
-  background-color: #ffffff;
+  background-color: rgba(255, 255, 255, 0.8);
   border-radius: 2px;
   font-size: 20px;
   padding: 8px 8px;
@@ -135,6 +131,14 @@
 }
 
 /* TEKSTBOKSE */
+.dokulink {
+  color: black;
+}
+
+.dokulink:hover {
+  color: #c9372c;
+}
+
 .tematext {
   background-color: rgba(255, 255, 255, 0.4);
   border: 1px solid #000;
@@ -220,7 +224,8 @@
     top: 390px;
     font-size: 15px;
     padding-left: 0px;
-    padding-right: 01px;
+    padding-right: 1px;
+    color: black;
   }
 
   .next {
@@ -228,7 +233,8 @@
     font-size: 15px;
     top: 390px;
     padding-left: 0px;
-    padding-right: 01px;
+    padding-right: 1px;
+    color: #000;
   }
 
   .text {
