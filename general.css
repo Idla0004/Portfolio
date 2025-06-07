@@ -202,8 +202,19 @@ body {
   margin-right: 110px;
 }
 
-.menu-links a:hover {
-  color: #ad0303;
+.link1 {
+  background-color: transparent;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 20px;
+}
+
+.link1:hover {
+  color: #131313;
+  background-image: url(img/hoverhead.jpeg);
+  background-size: cover;
+  background-repeat: round;
+  background-position-y: bottom;
 }
 
 .menu-links a {
@@ -475,11 +486,10 @@ nav {
   .headline {
     font-size: 30px;
     position: absolute;
-    left: 30px;
+    left: 20px;
     top: 140px;
     letter-spacing: 1px;
   }
-
   .underhead {
     font-size: 20px;
     position: absolute;
@@ -612,11 +622,6 @@ nav {
   .illustration {
     max-width: 90%;
     height: auto;
-  }
-
-  .headline,
-  .headline2 {
-    text-align: center;
   }
 }
 
