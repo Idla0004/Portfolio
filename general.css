@@ -29,20 +29,26 @@
   src: url(fonts/Lato-Regular.ttf);
 }
 
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: Oswaldbold;
-  font-size: 50px;
+  font-size: 3rem;
 }
 
 h2 {
   font-family: Oswaldsemi;
-  font-size: 36px;
+  font-size: 2.25rem;
   margin-top: 0px;
 }
 
 h3 {
   font-family: Oswaldbold;
-  font-size: 30px;
+  font-size: 2rem;
   margin: 0%;
 }
 
@@ -113,12 +119,62 @@ body {
 
 /*forside link knapper*/
 .grid1_2 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  padding-top: 50px;
-  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  gap: 100px;
+  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
+.linkforside {
+  background-color: #000000;
+  color: #ffffff;
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  padding-bottom: 80px;
+  border: solid 1px #000000;
+  box-shadow: 1px 1px 5px black;
+}
+
+.linkforside h3 {
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.linkforside p {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 60px;
+  padding-top: 20px;
+}
+
+.linkforside img {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+}
+
+.linkforside a {
+  background-color: rgb(63, 63, 63);
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: 150px;
+}
+
+.grid1_2 a:hover {
+  color: #e8e8e8;
+  background-color: rgb(142, 142, 142);
+}
+
+.grid1_2 a {
+  color: #ffffff;
+}
 .grid1_2 a {
   background-color: black;
   width: 250px;
@@ -133,34 +189,28 @@ body {
   margin: auto;
 }
 
-.grid1_2 a:hover {
-  color: #e8e8e8;
-  background-color: rgb(63, 63, 63);
-}
-
 /*side overskrifter*/
 
-.headline {
+.headline1 {
   font-family: Oswaldbold;
   font-size: 50px;
   position: absolute;
   left: 165px;
-  top: 220px;
+  top: 250px;
   letter-spacing: 3px;
 }
 
 .headline2 {
   color: transparent;
   font-family: Oswaldbold;
-  font-weight: 900;
   font-size: 100px;
-  text-shadow: 0px 0px 15px #ad0303;
+  text-shadow: 0px 0px 12px #ad0303;
   letter-spacing: 10px;
 }
 
 .underhead {
   position: absolute;
-  top: 360px;
+  top: 400px;
 }
 
 .imgtag img {
@@ -173,7 +223,7 @@ body {
 .logo img {
   position: absolute;
   left: 110px;
-  top: 30px;
+  top: 75px;
   width: 70px;
 }
 
@@ -260,7 +310,7 @@ a {
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 18px;
+  font-size: 1rem;
   line-height: 1.5;
   z-index: 1;
 }
@@ -291,7 +341,7 @@ nav {
   width: 40px;
   margin-left: auto;
   position: relative;
-  bottom: 35px;
+  bottom: 65px;
 }
 
 .burger-menu2 span {
@@ -330,10 +380,12 @@ nav {
 .grid1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  margin-bottom: 30px;
+  margin-bottom: 20px;
+  align-items: center;
 }
 
 .textbox1 {
+  display: grid;
   background-color: rgba(240, 240, 240, 0.4);
   border: solid 1px;
   border-color: #ad0303;
@@ -342,17 +394,17 @@ nav {
   padding-left: 40px;
   padding-right: 60px;
   padding-top: 40px;
-  width: 660px;
-  height: 340px;
+  padding-bottom: 20px;
+  width: auto;
+  height: auto;
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 1rem;
 }
 
 .lottie {
-  position: absolute;
-  right: 150px;
-  bottom: 50px;
-  height: 500px;
+  display: block;
+  width: auto;
+  height: auto;
 }
 
 .textboxcode {
@@ -365,7 +417,7 @@ nav {
   padding-right: 40px;
   padding-top: 30px;
   padding-bottom: 20px;
-  font-size: 18px;
+  font-size: 1rem;
   margin-bottom: 20px;
   align-items: start;
 }
@@ -375,22 +427,9 @@ nav {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-.textboxinfo2 ul {
-  padding-left: 0px;
-  line-height: 1.8;
-}
-
 .textboxinfo ul {
   padding-left: 20px;
   line-height: 3;
-}
-
-.textboxinfo2 li {
-  display: flex;
-  align-items: center;
-  font-size: 18px;
-  line-height: 50px;
-  gap: 0.5rem;
 }
 
 .programliste img {
@@ -399,17 +438,37 @@ nav {
   height: 35px;
 }
 
+.programliste {
+  list-style: none;
+}
+
 .illustration {
-  max-width: 480px;
+  width: 100%;
+  max-width: 600px;
+}
+
+.textbox3 {
+  display: grid;
+  background-color: rgba(240, 240, 240, 0.4);
+  border: solid 1px;
+  border-color: #ad0303;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px #ad0303;
+  padding-left: 40px;
+  padding-right: 60px;
+  padding-top: 40px;
+  width: auto;
+  height: auto;
+  line-height: 1.4;
+  font-size: 1rem;
 }
 
 /*PORTFOLIO SIDE*/
 .portfolio-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 30px;
-  justify-items: center;
-  padding: 0 100px;
+  gap: 30px;
+  justify-items: auto;
   margin-bottom: 30px;
 }
 
@@ -417,7 +476,9 @@ nav {
   display: flex;
   flex-direction: column;
   background-color: white;
-  width: 500px;
+  width: auto;
+  max-width: 500px;
+  height: auto;
   height: 600px;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.4);
   opacity: 0.5;
@@ -433,7 +494,7 @@ nav {
 .portfolio-card h2 {
   color: #ad0303;
   font-family: Oswaldbold;
-  font-size: 100px;
+  font-size: 6.1rem;
   margin: 10px 0 0 20px;
   text-shadow: -2px 2px 10px #ad0303;
 }
@@ -452,7 +513,7 @@ nav {
   color: #000000;
   width: 180px;
   text-align: center;
-  font-size: 20px;
+  font-size: 1rem;
   letter-spacing: 1px;
   border: solid rgb(0, 0, 0) 0.2px;
   border-radius: 10px;
@@ -494,7 +555,7 @@ nav {
   .logo img {
     max-width: 50px;
     left: 40px;
-    top: 40px;
+    top: 45px;
   }
 
   .compimg {
@@ -502,21 +563,22 @@ nav {
   }
 
   .headline2 {
-    font-size: 40px;
+    font-size: 3rem;
     margin-right: 120px;
   }
 
-  .headline {
-    font-size: 30px;
+  .headline1 {
+    font-size: 2.4rem;
     position: absolute;
     left: 20px;
-    top: 140px;
+    top: 175px;
     letter-spacing: 1px;
   }
+
   .underhead {
-    font-size: 20px;
+    font-size: 1.25rem;
     position: absolute;
-    top: 220px;
+    top: 270px;
     padding-left: 5px;
   }
 
@@ -533,27 +595,29 @@ nav {
   }
 
   .grid1_2 {
-    display: flex;
-    flex-wrap: wrap;
-    max-width: 200px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .linkforside,
+  .linkforside img {
+    max-width: 100%;
+  }
+
+  .linkforside a {
     margin: auto;
-    gap: 10px;
+    display: block;
+    width: auto;
+    max-width: max-content;
+    text-align: center;
   }
-
-  .grid1_2 a {
-    max-width: 150px;
-    max-height: 20px;
-    font-size: medium;
-    padding-top: 10px;
-    padding-bottom: 12px;
-  }
-
   .textbox_1 {
     display: flex;
     flex-direction: column;
     max-width: fit-content;
     max-height: max-content;
-    font-size: 14px;
+    font-size: 1rem;
     padding: 5%;
   }
 
@@ -582,7 +646,7 @@ nav {
 
   .portfolio-card a {
     max-width: 120px;
-    font-size: 15px;
+    font-size: 1rem;
     margin-right: auto;
     margin-left: auto;
     margin-top: 0%;
@@ -612,16 +676,11 @@ nav {
     width: 90%;
     height: auto;
     padding: 20px;
-    font-size: 15px;
+    font-size: 1rem;
   }
 
   .lottie {
-    position: static;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    margin-top: 10px;
+    margin-left: 50px;
   }
 
   .textbox2 {
@@ -629,13 +688,6 @@ nav {
     flex-direction: column;
     padding: 20px;
     width: 90%;
-  }
-
-  .textboxleft,
-  .textboxright {
-    margin: 0;
-    padding: 0;
-    width: 100%;
   }
 
   .programliste li {
