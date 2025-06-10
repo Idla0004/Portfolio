@@ -119,15 +119,14 @@
   margin-bottom: 30px;
 }
 
-.grid1_2 a {
+.portlink1 a {
   color: #ffffff;
 }
 
-/*PROCES LINK*/
 .linkdirect {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #000000;
+  background-color: #414141;
   color: white;
   text-decoration: none;
   border-radius: 5px;
@@ -253,7 +252,7 @@
   text-align: center;
   font-size: 1.25rem;
   letter-spacing: 1px;
-  padding: 15px;
+  padding: 10px;
   border: solid rgb(240, 240, 240) 0.75px;
   border-radius: 10px;
   box-shadow: 2px 2px 2px black;
@@ -262,6 +261,29 @@
 .portlink:hover {
   color: #e8e8e8;
   background-color: rgb(63, 63, 63);
+}
+
+.portlink1 a:hover {
+  color: #e8e8e8;
+  background-color: rgb(142, 142, 142);
+}
+
+.portlink1 a {
+  color: #ffffff;
+}
+.portlink1 a {
+  display: inline-block;
+  background-color: black;
+  width: 250px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 1px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border: solid rgb(240, 240, 240) 0.75px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px black;
+  margin: auto;
 }
 
 /* RESPONSIVITET MOBIL*/
